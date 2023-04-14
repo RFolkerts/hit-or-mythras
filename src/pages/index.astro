@@ -1,11 +1,31 @@
 ---
 import PicoLayout from '../layouts/PicoLayout.astro';
 ---
+<style>
+	article.top{
+		margin-top: 0em;
+	}
+</style>
 <PicoLayout title="Never tell me the odds" currentPage="/">
-	<article>
-		<h2>Lorem Ipsom</h2>
-		<p>Ornare primis egestas orci turpis arcu pretium. Penatibus venenatis scelerisque nam iaculis porttitor. Fermentum, libero nisi praesent lacinia felis. Curae; elit, senectus iaculis tristique ut. Ac curabitur dis curae; tristique phasellus ultricies. Pretium enim porta aliquet risus etiam ligula tincidunt vestibulum at. Justo netus ac mus conubia. Sagittis commodo rutrum sociosqu sit interdum magna volutpat, felis tortor aenean sapien. Pulvinar quisque ultrices arcu, dapibus in eu? Non torquent tellus conubia ante?</p>
-		<p>Curabitur ultrices felis parturient ipsum lacinia integer cubilia dolor magnis et integer porta! Placerat fames placerat facilisi ut netus molestie felis habitant auctor imperdiet ipsum. Mollis consequat interdum justo rutrum rhoncus nec vulputate aptent turpis pretium bibendum. Sapien dictum risus iaculis cursus. Consectetur tortor fermentum mus vel commodo habitant. Aliquet fringilla montes vehicula mollis aptent.</p>
+	<article class="top">
+		<hgroup>
+			<h2>Odds, The Medical Test Paradox and Bayes Theorem</h2>
+			<p>Nerding out on youtube</p>
+		</hgroup>
+		<p>Decades ago, when I was a college student, I regularly played D&D and several other role playing games with friends.  I had greate fun,
+			but I was never satisfied with how the probabilities worked.  I came up with a system using arctangents, but even a physics nerd
+			knew that was impractical, so I never tried to come up with a more practical system.  Recently, I watched a youtube video by 
+			<a href="https://www.youtube.com/@3blue1brown">3Blue1Brown</a>. In this, he rewrote Bayes Theorem using odds instead of probabilties.  The results 
+			were fascinating -  I had a eureka moment.
+		</p>
+		
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/lG4VkPoG3ko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<p>The <em>eureka</em> was that all the bonuses and penalties in a game like D&D are just ways to alter the likelihood of success  when the player 'rolls to hit' 
+			with a d20.  If the odds of a hero landing a successful sword strike is 1:4, (aka 25%), how does that change if they are using a magical sword?  In D&D, a 'basic magical sword'
+			has a +1 rating.  This basically means that you ahve a +5% chance of hitting and a -5% chance of failure.  If we think in terms of odds, the odds
+			improve by a factor of about 11:9.  If we replace 'hit bonuses and penalties' by bonus factors and penalty factors, we have 
+			a mathmatically rigorous way to combine factors.
+		</p>
 	</article>
 	<article>
 		<h2>more Lorem Ipsom</h2>
