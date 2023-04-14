@@ -1,0 +1,24 @@
+---
+export interface Props{
+    title: String;
+}
+const {title} =  Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/picocss/1.5.9/pico.min.css" 
+            integrity="sha512-DKSsjWUdaQnTKmx3B3VDrGudLn9z5EpxE9MYHp2ZfhQ8ZQOLR9vtUWHogLdv4vRALUzj2RTdoR4Ylaun/ypF0w==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
