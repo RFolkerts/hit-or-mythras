@@ -23,7 +23,7 @@ const {title, currentPage} =  Astro.props;
 	</head>
 	<body>
 		<header class="container">
-			<Nav currentPage={currentPage}/>
+			<Nav title={title} currentPage={currentPage}/>
 		</header>
 		<main class="container">
 			<slot />

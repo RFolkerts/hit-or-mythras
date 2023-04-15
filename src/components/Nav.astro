@@ -1,14 +1,19 @@
 ---
-const { currentPage } = Astro.props;
+const { title, currentPage } = Astro.props;
+
+function linkTo( targetPage: string){
+  return targetPage===currentPage? "" : targetPage;
+}
+
 ---
 <nav>
     <hgroup>
-      <h1><img src="./favicon.svg" alt="Millenium Flacon"/>Never Tell me the Odds!</h1>
+      <h1><img src="./favicon.svg" alt="Millenium Flacon"/>&nbsp;{title}</h1>
       <p>Hit-or-Mythras, a RP framework using odds, not probabilities</p>
   </hgroup>
     <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
+        <li><a href={linkTo("/")}>Home</a></li>
+        <li><a href={linkTo("/about")}>About</a></li>
         <li><a href="/" role='button'>Login</a></li>
     </ul>
 </nav>
