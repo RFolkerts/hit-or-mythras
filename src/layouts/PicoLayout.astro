@@ -1,8 +1,8 @@
 ---
 
-import Nav from '../components/Nav.astro';
+
+import Hero from '../components/Hero.astro';
 export interface Props{
-    title: String;
 	currentPage: String;
 }
 const {title, currentPage} =  Astro.props;
@@ -22,17 +22,16 @@ const {title, currentPage} =  Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<header class="container">
-			<Nav title={title} currentPage={currentPage}/>
-		</header>
+		<Hero currentPage={currentPage}/>
 		<main class="container">
 			<slot />
 		</main>
 	<footer class="container">
 		<div class="grid">
-			<div>Copyright &copy 2023 Robert Folkerts</div>
+			<div>Copyright &copy {new Date().getFullYear()} Robert Folkerts</div>
 			<div>social links go here....</div>
 		</div>
 	</footer>
 	</body>
 </html>
+

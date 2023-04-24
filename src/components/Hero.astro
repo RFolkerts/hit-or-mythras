@@ -1,0 +1,42 @@
+---
+export interface Props{
+	currentPage: String;
+}
+
+const {currentPage} =  Astro.props;
+
+function linkTo( targetPage: string){
+  return targetPage===currentPage? "" : targetPage;
+}
+---
+<header class="hero">
+    <nav class="container">
+        <hgroup>
+        <h1><img src="./favicon.svg" alt="Millenium Flacon"/>&nbsp;Defy the odds</h1>
+        <p>Hit-or-Mythras, a RP framework using odds, not probabilities</p>
+    </hgroup>
+        <ul>
+            <li><a href={linkTo("/")}>Home</a></li>
+            <li><a href={linkTo("/about")}>About</a></li>
+            <li><a href="/" role='button'>Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+    header{
+        background-image: url("./Nicolas_Régnier_-_David_et_Goliath.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    nav{
+        backdrop-filter: blur(10px) invert(30%) brightness(60%);
+    }
+    hgroup{
+        padding-left: 2rem;
+    }
+    li {
+        padding-right: 2rem;
+    }
+</style>

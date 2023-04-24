@@ -1,5 +1,5 @@
 ---
-const { title, currentPage } = Astro.props;
+const { currentPage } = Astro.props;
 
 function linkTo( targetPage: string){
   return targetPage===currentPage? "" : targetPage;
@@ -8,7 +8,7 @@ function linkTo( targetPage: string){
 ---
 <nav>
     <hgroup>
-      <h1><img src="./favicon.svg" alt="Millenium Flacon"/>&nbsp;{title}</h1>
+      <h1><img src="./favicon.svg" alt="Millenium Flacon"/>&nbsp;<s>Never</s>Always tell me the odds</h1>
       <p>Hit-or-Mythras, a RP framework using odds, not probabilities</p>
   </hgroup>
     <ul>
