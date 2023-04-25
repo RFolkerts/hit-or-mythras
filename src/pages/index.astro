@@ -29,11 +29,8 @@ import PicoLayout from '../layouts/PicoLayout.astro';
 		a group of friends gathering online to role play has been normalized.  Hit or Mitrhas will play test 
 		how a game like Mythras can switch over to odds.
 	</p>
-	<article class="top">
-		<hgroup>
-			<h2>Odds, The Medical Test Paradox and Bayes Theorem</h2>
-			<p>Nerding out on youtube</p>
-		</hgroup>
+	<details>
+		<summary><h3>Odds, The Medical Test Paradox and Bayes Theorem</h3></summary>
 		<p>Decades ago, when I was a college student, I regularly played D&D and several other role playing games with friends.  I had great fun,
 			but I was never satisfied with how the probabilities worked.  I came up with a system using arctangents, but even a physics nerd
 			knew that was impractical, so I never tried to come up with a more practical system.  Recently, I watched a youtube video by 
@@ -51,11 +48,17 @@ import PicoLayout from '../layouts/PicoLayout.astro';
 		<p><em>BUT,</em> we have a new rule for combining bonuses.  We don't add them, we multiply them.
 		We have computers that can do the math accurately and quickly. So the only way to make the game
 		practical is to have a computer do the math for us. </p>
-	</article>
-	<article>
-		<h2>more Lorem Ipsom</h2>
+		</details>
+	<details>
+		<summary><h3>more Lorem Ipsom</h3></summary>
 		<p>Sagittis gravida nisl accumsan mus pretium fusce pulvinar phasellus donec platea. Nisi quisque pretium viverra taciti diam penatibus sed tortor mi tempor? Id, justo cras habitasse odio. Nec turpis nisi curae; conubia justo netus nulla hendrerit cras quis mus. Malesuada nostra adipiscing feugiat odio aptent. Cubilia enim magnis sed facilisis dictumst conubia integer hendrerit mauris dignissim nullam. Curae; adipiscing commodo in neque scelerisque. Egestas pellentesque convallis nunc eros justo gravida sapien vestibulum vivamus. Mollis pellentesque, rutrum cum sed senectus ac metus. Per, hac mattis phasellus mauris dictumst! Ante conubia dictum parturient proin sapien lacus hendrerit primis porttitor potenti? Integer lorem, primis vitae dictumst vestibulum ad. Ligula dapibus facilisi nascetur tristique vestibulum viverra porta aliquet montes dis. Taciti mattis inceptos massa duis consectetur!</p>
 		<p>Habitasse hac sociosqu magna urna blandit amet eu placerat nisl himenaeos quis. Mus augue dictumst habitasse nulla taciti nisl. Massa massa luctus tellus vulputate ultrices euismod, quam torquent ultrices amet urna sodales. Lobortis cursus cum volutpat tristique suspendisse. Fames sociis orci metus erat eget amet dictum. Pulvinar maecenas sociis quisque duis sollicitudin fusce luctus facilisi torquent duis cras. Nam laoreet lectus ultrices ridiculus. Egestas nostra rhoncus, habitant enim habitant placerat. Per vitae mi turpis sem habitant torquent nostra faucibus mauris nunc enim posuere. Et tortor et venenatis diam amet tincidunt, sollicitudin montes scelerisque platea tristique. Ridiculus, litora fusce potenti scelerisque in. Auctor quis quisque proin ipsum taciti cras aptent massa eleifend augue. Aliquam proin convallis curabitur consequat luctus curabitur lacus consequat.</p>
 		<p>Eu nibh lectus netus tincidunt gravida placerat dignissim! Consequat tortor aliquet aenean nibh augue ultricies velit nam maecenas rutrum habitant. Cum netus vehicula fusce justo nostra ad dui id nulla a sociosqu. Etiam habitasse; turpis pretium mollis nascetur risus massa congue adipiscing? Penatibus class porta libero quisque erat cubilia? Commodo tristique condimentum mauris pellentesque.</p>
-	</article>
+	</details>
 </PicoLayout>
+
+<style>
+	summary > h3{
+		--typography-spacing-vertical: 0rem;
+	}
+</style>
